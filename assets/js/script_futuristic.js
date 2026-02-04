@@ -46,30 +46,27 @@ document.addEventListener('DOMContentLoaded', function () {
             submitBtn.innerHTML = 'TRANSMITTING...';
             submitBtn.disabled = true;
 
-            // Initialize EmailJS (using the ID from original script)
-            // Note: In production, IDs should be in environment variables, but preserving existing behavior here.
+            // Construct WhatsApp Message
+            const whatsappNumber = "919788898983";
+            const whatsappMessage = encodeURIComponent(`*New Contact Request*\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:* ${message}`);
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+
+            // Initialize EmailJS (as a silent background fallback if possible)
             if (typeof emailjs !== 'undefined') {
                 emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
-
                 emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-                    .then(function (response) {
-                        console.log('SUCCESS!', response.status, response.text);
-                        contactForm.reset();
-                        showNotification('TRANSMISSION SUCCESSFUL', 'success');
-                        submitBtn.innerHTML = originalBtnContent;
-                        submitBtn.disabled = false;
-                    }, function (error) {
-                        console.log('FAILED...', error);
-                        showNotification('TRANSMISSION FAILED. RETRY?', 'error');
-                        submitBtn.innerHTML = originalBtnContent;
-                        submitBtn.disabled = false;
-                    });
-            } else {
-                console.error('EmailJS not loaded');
-                showNotification('System Error: Email Service Offline', 'error');
-                submitBtn.innerHTML = originalBtnContent;
-                submitBtn.disabled = false;
+                    .then(() => console.log('Backup email sent'))
+                    .catch((err) => console.log('Backup email failed', err));
             }
+
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+
+            // Reset form and UI
+            contactForm.reset();
+            showNotification('OPENING WHATSAPP...', 'success');
+            submitBtn.innerHTML = originalBtnContent;
+            submitBtn.disabled = false;
         });
     }
 });
