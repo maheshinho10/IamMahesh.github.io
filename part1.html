@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh Dharma M | Future-Ready Full Stack Developer</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        mono: ['Space Grotesk', 'monospace'],
+                    },
+                    colors: {
+                        cyber: {
+                            black: '#020617',
+                            dark: '#0f172a',
+                            slate: '#1e293b',
+                            cyan: '#06b6d4',
+                            neon: '#22d3ee',
+                            violet: '#8b5cf6',
+                            purple: '#a855f7',
+                            blue: '#3b82f6',
+                        }
+                    },
+                    backgroundImage: {
+                        'grid-pattern': "linear-gradient(to right, #1e293b 1px, transparent 1px), linear-gradient(to bottom, #1e293b 1px, transparent 1px)",
+                        'radial-glow': 'radial-gradient(circle at center, var(--tw-gradient-stops))',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 12s linear infinite',
+                        'reverse-spin': 'spin 15s linear infinite reverse',
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-glow': 'pulse-glow 3s infinite',
+                        'scan': 'scan 4s linear infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: '0.6', filter: 'brightness(1)' },
+                            '50%': { opacity: '1', filter: 'brightness(1.3)' },
+                        },
+                        scan: {
+                            '0%': { top: '0%' },
+                            '100%': { top: '100%' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-1000px 0' },
+                            '100%': { backgroundPosition: '1000px 0' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, #06b6d4, #8b5cf6);
+            border-radius: 3px;
+        }
+
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(34, 211, 238, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .glass-card:hover {
+            background: rgba(15, 23, 42, 0.5);
+            border-color: rgba(34, 211, 238, 0.4);
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.2);
+        }
+
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+
+        .text-glow-cyan {
+            text-shadow: 0 0 20px rgba(6, 182, 212, 0.6);
+        }
+
+        .text-glow-violet {
+            text-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+        }
+
+
+        .bg-grid-animate {
+            background-size: 40px 40px;
+            mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+            -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+            animation: moveGrid 40s linear infinite;
+        }
+
+        @keyframes moveGrid {
+            0% {
+                transform: perspective(1000px) rotateX(20deg) translateY(0);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateX(20deg) translateY(40px);
+            }
+        }
+
+
+        .clip-corner {
+            clip-path: polygon(0 0,
+                    100% 0,
+                    100% 85%,
+                    95% 100%,
+                    0 100%);
+        }
+    </style>
+</head>
+
+<body class="antialiased selection:bg-cyan-500/30 selection:text-cyan-100">
+
+
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <div class="absolute inset-0 bg-grid-pattern opacity-[0.05] bg-grid-animate transform-gpu"></div>
+        <div
+            class="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-cyber-violet/10 rounded-full blur-[100px] animate-pulse-glow">
+        </div>
+        <div class="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] bg-cyber-cyan/10 rounded-full blur-[100px] animate-pulse-glow"
+            style="animation-delay: 2s"></div>
+    </div>
+
+
+    <nav class="fixed w-full z-50 top-0 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
+                    <div
+                        class="relative w-10 h-10 flex items-center justify-center bg-gradient-to-br from-cyber-cyan to-cyber-violet rounded-sm group-hover:shadow-[0_0_15px_rgba(6,182,212,0.5)] transition-all duration-300 clip-corner">
+                        <span class="font-mono font-bold text-white text-lg">MD</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span
+                            class="font-mono font-bold text-lg tracking-wider text-white group-hover:text-cyber-neon transition-colors">MAHESH
+                            DHARMA</span>
+                        <span class="text-[10px] text-cyber-cyan tracking-[0.2em] font-mono">SYSTEM_ONLINE</span>
+                    </div>
+                </div>
+
+
+                <div class="hidden md:block">
+                    <div class="flex items-center space-x-8">
+                        <a href="#about"
+                            class="text-xs font-mono font-medium text-slate-400 hover:text-cyber-neon transition-colors uppercase tracking-widest relative group">
+                            <span class="relative z-10">About</span>
+                            <span
+                                class="absolute bottom-0 left-0 w-0 h-[1px] bg-cyber-neon transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#skills"
+                            class="text-xs font-mono font-medium text-slate-400 hover:text-cyber-neon transition-colors uppercase tracking-widest relative group">
+                            <span class="relative z-10">Skills</span>
+                            <span
+                                class="absolute bottom-0 left-0 w-0 h-[1px] bg-cyber-neon transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#experience"
+                            class="text-xs font-mono font-medium text-slate-400 hover:text-cyber-neon transition-colors uppercase tracking-widest relative group">
+                            <span class="relative z-10">Timeline</span>
+                            <span
+                                class="absolute bottom-0 left-0 w-0 h-[1px] bg-cyber-neon transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#projects"
+                            class="text-xs font-mono font-medium text-slate-400 hover:text-cyber-neon transition-colors uppercase tracking-widest relative group">
+                            <span class="relative z-10">Projects</span>
+                            <span
+                                class="absolute bottom-0 left-0 w-0 h-[1px] bg-cyber-neon transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#contact"
+                            class="px-5 py-2 clip-corner bg-white/5 border border-cyber-cyan/30 text-cyber-neon hover:bg-cyber-cyan hover:text-black transition-all uppercase text-xs font-bold tracking-widest hover:shadow-[0_0_20px_rgba(34,211,238,0.4)]">
+                            Initialise_Contact
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden" id="home">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+
+                <div class="order-2 lg:order-1 space-y-8">
+                    <div
+                        class="inline-flex items-center gap-3 px-3 py-1 rounded-sm bg-cyber-cyan/5 border-l-2 border-cyber-cyan">
+                        <span class="relative flex h-2 w-2">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyber-cyan opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-cyber-neon"></span>
+                        </span>
+                        <span class="text-cyber-cyan text-xs font-mono tracking-widest uppercase">Senior Digital
+                            Transformation Engineer</span>
+                    </div>
+
+                    <div>
+                        <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight font-sans tracking-tight">
+                            <span
+                                class="block text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-500 mb-2">ARCHITECTING</span>
+                            <span
+                                class="block text-transparent bg-clip-text bg-gradient-to-r from-cyber-cyan via-white to-cyber-violet text-glow-cyan">THE
+                                FUTURE</span>
+                        </h1>
+                        <p
+                            class="mt-6 text-xl text-slate-400 font-light max-w-lg leading-relaxed border-l border-cyber-violet/30 pl-6">
+                            Building scalable, high-performance web &amp; mobile ecosystems. Transforming complex
+                            requirements into seamless digital experiences.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#projects"
+                            class="group relative px-8 py-4 bg-cyber-cyan text-black font-bold tracking-wide clip-corner overflow-hidden transition-all hover:scale-105">
+                            <div
+                                class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-[shimmer_1s_infinite]">
+                            </div>
+                            <span class="relative flex items-center gap-2">
+                                VIEW PROTOCOLS
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#resume"
+                            class="group px-8 py-4 border border-white/10 bg-white/5 text-white font-bold tracking-wide hover:bg-white/10 hover:border-cyber-cyan/50 hover:text-cyber-neon transition-all clip-corner flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                            ACCESS DATA
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative">
+                    <div class="relative w-[400px] h-[500px] flex items-end justify-center">
+
+                        <!-- Main Circular Background (The "Hole") -->
+                        <div
+                            class="absolute bottom-8 w-[350px] h-[350px] rounded-full bg-gradient-to-b from-slate-800 to-slate-900 border border-cyber-cyan/20 shadow-[0_0_50px_rgba(6,182,212,0.15)] z-0">
+                            <!-- Animated Rings -->
+                            <div
+                                class="absolute inset-0 rounded-full border border-cyber-cyan/20 border-dashed animate-spin-slow">
+                            </div>
+                            <div
+                                class="absolute inset-4 rounded-full border border-cyber-violet/20 border-dotted animate-reverse-spin">
+                            </div>
+                            <div
+                                class="absolute inset-[-10px] rounded-full bg-cyber-cyan/5 blur-2xl animate-pulse-glow">
+                            </div>
+                        </div>
+
+                        <!-- Profile Image (Pill Shape to mimic "Pop Out" with solid background) -->
+                        <div class="relative z-10 w-[300px] md:w-[340px] mb-8 group">
+                            <div
+                                class="relative rounded-b-full rounded-t-[180px] overflow-hidden border-b-2 border-cyber-cyan/30 shadow-2xl">
+                                <img src="./assets/images/Mahesh hero.png" alt="Mahesh Dharma Profile"
+                                    class="w-full h-auto object-cover scale-110 group-hover:scale-115 transition-transform duration-700 ease-out">
+                            </div>
+
+                            <!-- Futuristic Scanner Line -->
+                            <div
+                                class="absolute top-1/4 w-full h-[1px] bg-cyber-neon shadow-[0_0_20px_cyan] animate-scan opacity-40 rounded-full">
+                            </div>
+                        </div>
+
+                        <!-- Floating Tech Cards -->
+                        <div
+                            class="absolute top-20 -right-4 glass-card p-3 rounded-xl animate-float z-20 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                            <span class="text-xs font-mono text-white">React Native</span>
+                        </div>
+                        <div class="absolute bottom-24 -left-12 glass-card p-3 rounded-xl animate-float z-20 flex items-center gap-2"
+                            style="animation-delay: 1.5s">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                            <span class="text-xs font-mono text-white">NestJS</span>
+                        </div>
+                        <div class="absolute top-32 -left-8 glass-card p-3 rounded-xl animate-float z-20 flex items-center gap-2"
+                            style="animation-delay: 2.5s">
+                            <span class="w-2 h-2 bg-cyber-cyan rounded-full animate-pulse"></span>
+                            <span class="text-xs font-mono text-white">ReactJS</span>
+                        </div>
+                        <div class="absolute bottom-12 right-0 glass-card p-3 rounded-xl animate-float z-20 flex items-center gap-2"
+                            style="animation-delay: 3.5s">
+                            <span class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
+                            <span class="text-xs font-mono text-white">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div
+            class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 opacity-60 animate-bounce">
+            <span class="text-[10px] font-mono tracking-widest text-cyber-cyan">INITIATE_SCROLL</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyber-cyan" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </section>

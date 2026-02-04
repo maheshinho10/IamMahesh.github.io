@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="mahesh dharma, portfolio, frontend developer, react developer, react native developer, full stack developer, personal portfolio, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Mahesh Dharma - Frontend Developer & React Native Specialist with 4+ years of experience. Expert in React, React Native, and modern web technologies. View my portfolio of mobile apps and web applications." />
+    <meta name="author" content="Mahesh Dharma">
+    <meta property="og:title" content="Mahesh Dharma - Frontend Developer Portfolio">
+    <meta property="og:description" content="Frontend Developer & React Native Specialist with 4+ years of experience">
+    <meta property="og:image" content="./assets/images/mahesh ree.jpg">
+    <meta property="og:url" content="https://iammahesh.github.io">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    <title>Mahesh Dharma - Frontend Developer & React Native Specialist</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- Scroll Progress Indicator -->
+<div class="scroll-progress">
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+</div>
+
+<!-- pre loader -->
+<div class="loader-container">
+  <div class="loader">
+    <div class="loader-circle"></div>
+    <div class="loader-text">Loading...</div>
+  </div>
+</div>
+
+<!-- navbar starts -->
+<header>
+    <div class="nav-container">
+        <a class="logo">
+            <i class="fab fa-react"></i>
+            <span>Mahesh</span>
+        </a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- navbar ends -->
+
+<!-- hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <div class="content">
+           
+            <h1>Hi, I'm <span class="highlight">Mahesh Dharma</span></h1>
+            <p class="hero-subtitle">I craft exceptional digital experiences with <span class="typing-text"></span></p>
+            <p class="hero-description">Passionate developer with 4+ years of experience building scalable web and mobile applications. Specialized in React ecosystem and modern frontend technologies.</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Apps Published</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <span>About Me</span>
+                    <i class="fas fa-user"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/mahesh-dharma-894359192/" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                    <li><a class="github" aria-label="GitHub" href="https://github.com/maheshinho10" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a class="twitter" aria-label="Twitter" href="https://twitter.com/MaheshDharma5" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="instagram" aria-label="Instagram" href="https://instagram.com/iam_maheshinho_cr7?igshid=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="image-container">
+                <img draggable="false" class="tilt" src="./assets/images/Me.jpg" alt="Mahesh Dharma">
+                <div class="floating-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Mobile Apps</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Apps</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll Down</span>
+    </div>
+</section>
+<!-- hero section ends -->
+
+<!-- about section starts -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p class="section-subtitle">Get to know me better</p>
+        </div>
+        
+        <div class="about-content">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img draggable="false" class="tilt" src="./assets/images/mahesh ree.jpg" alt="Mahesh Dharma">
+                    <div class="experience-badge">
+                        <span class="years">4+</span>
+                        <span class="text">Years of<br>Experience</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-text">
+                <div class="about-header">
+                    <h3>Frontend Developer & React Native Specialist</h3>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Chennai, Tamil Nadu, India</span>
+                    </div>
+                </div>
+                
+                <p class="about-description">
+                    I am a passionate Frontend Developer with 4+ years of experience specializing in React and React Native development. 
+                    I've successfully built and deployed multiple applications on both the App Store and Play Store, demonstrating my 
+                    expertise in creating scalable, user-friendly mobile experiences.
+                </p>
+                
+                <p class="about-description">
+                    My journey in software development has equipped me with deep knowledge of modern frontend technologies, 
+                    state management, and mobile app development. I thrive on solving complex problems and turning innovative 
+                    ideas into reality through clean, efficient code.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>React & React Native Expert</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Mobile App Development</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>UI/UX Design Principles</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Performance Optimization</span>
+                    </div>
+                </div>
+                
+                <div class="about-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>maheshinho10@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Chennai-600014, Tamil Nadu, India</span>
+                    </div>
+                </div>
+                
+                <div class="about-actions">
+                    <a href="./assets/documents/Mahesh 2025.pdf" download class="btn btn-primary btn-pulse">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-pulse">
+                        <i class="fas fa-envelope"></i>
+                        <span>Hire Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+<!-- skills section starts -->
+<section class="skills" id="skills">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="heading">Skills & <span>Technologies</span></h2>
+            <p class="section-subtitle">Technologies I work with</p>
+        </div>
+
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Frontend Development</h3>
+                <div class="skills-grid" id="frontendSkills">
+                    <!-- Skills will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Mobile Development</h3>
+                <div class="skills-grid" id="mobileSkills">
+                    <!-- Skills will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Backend & Databases</h3>
+                <div class="skills-grid" id="backendSkills">
+                    <!-- Skills will be loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skills-grid" id="toolsSkills">
+                    <!-- Skills will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- skills section ends -->
+
+
+
+
+
+<!-- blogs section starts -->
+<section class="blogs" id="blogs">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="heading">Latest <span>Blogs</span></h2>
+            <p class="section-subtitle">Thoughts and insights from my journey</p>
+        </div>
+
+        <div class="blogs-grid">
+            <div class="blog-card modern-card shadow-on-scroll">
+                <div class="blog-image">
+                    <a href="https://medium.com/@maheshdharma/why-reusable-components-are-important-in-react-8dbfbdc96991" target="_blank">
+                        <img draggable="false" src="./assets/images/Reuse.jpg" alt="React Reusable Components">
+                    </a>
+                    <div class="blog-category">React</div>
+                </div>
+                <div class="blog-content">
+                    <h3>
+                        <a href="https://medium.com/@maheshdharma/why-reusable-components-are-important-in-react-8dbfbdc96991" target="_blank">
+                            Why Reusable Components are Important in React?
+                        </a>
+                    </h3>
+                    <p>Learn how to create efficient, maintainable React applications by mastering the art of reusable components.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> March 2024</span>
+                        <span><i class="fas fa-clock"></i> 5 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card modern-card shadow-on-scroll">
+                <div class="blog-image">
+                    <a href="https://medium.com/@maheshdharma/challenges-developers-face-when-hosting-apps-on-the-app-store-and-play-store-b13d5df4f5e7" target="_blank">
+                        <img draggable="false" src="./assets/images/PLay store.jpeg" alt="App Store Publishing">
+                    </a>
+                    <div class="blog-category">Mobile Development</div>
+                </div>
+                <div class="blog-content">
+                    <h3>
+                        <a href="https://medium.com/@maheshdharma/challenges-developers-face-when-hosting-apps-on-the-app-store-and-play-store-b13d5df4f5e7" target="_blank">
+                            Struggling to Host Your App on App Store & Play Store?
+                        </a>
+                    </h3>
+                    <p>Common challenges developers face when publishing mobile apps and how to overcome them successfully.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> February 2024</span>
+                        <span><i class="fas fa-clock"></i> 8 min read</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-card modern-card shadow-on-scroll">
+                <div class="blog-image">
+                    <a href="https://medium.com/@maheshdharma/why-isnt-the-cache-cleared-after-every-build-6600dc4b3985" target="_blank">
+                        <img draggable="false" src="./assets/images/React Native.png" alt="React Native Cache">
+                    </a>
+                    <div class="blog-category">React Native</div>
+                </div>
+                <div class="blog-content">
+                    <h3>
+                        <a href="https://medium.com/@maheshdharma/why-isnt-the-cache-cleared-after-every-build-6600dc4b3985" target="_blank">
+                            Why isn't the cache cleared after every build?
+                        </a>
+                    </h3>
+                    <p>Understanding React Native build cache issues and effective solutions for developers.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> January 2024</span>
+                        <span><i class="fas fa-clock"></i> 6 min read</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="blogs-cta">
+            <a href="https://medium.com/@maheshdharma" target="_blank" class="btn btn-outline">
+                <i class="fab fa-medium"></i>
+                <span>Read More on Medium</span>
+            </a>
+        </div>
+    </div>
+</section>
+<!-- blogs section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="heading">Get In <span>Touch</span></h2>
+            <p class="section-subtitle">Let's work together</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card modern-card shadow-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>maheshinho10@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-card modern-card shadow-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Chennai, Tamil Nadu, India</p>
+                    </div>
+                </div>
+
+                <div class="contact-card modern-card shadow-on-scroll">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Availability</h3>
+                        <p>Open for new opportunities</p>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3>Connect with me</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/mahesh-dharma-894359192/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/maheshinho10" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://twitter.com/MaheshDharma5" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/iam_maheshinho_cr7" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact section ends -->
+
+<!-- footer section starts -->
+<section class="footer" id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fab fa-react"></i>
+                    <span>Mahesh Dharma</span>
+                </div>
+                <p>Passionate Frontend Developer and React Native Specialist with 4+ years of experience creating exceptional digital experiences. Specialized in React ecosystem and modern frontend technologies.</p>
+                <div class="footer-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Apps Published</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/maheshinho10" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mahesh-dharma-894359192/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/MaheshDharma5" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:maheshinho10@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#blogs"><i class="fas fa-blog"></i> Blogs</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Expertise</h3>
+                <ul>
+                    <li><i class="fab fa-react"></i> React Development</li>
+                    <li><i class="fab fa-android"></i> React Native Apps</li>
+                    <li><i class="fas fa-mobile-alt"></i> Mobile Development</li>
+                    <li><i class="fas fa-palette"></i> UI/UX Design</li>
+                    <li><i class="fas fa-code"></i> Frontend Development</li>
+                    <li><i class="fas fa-database"></i> API Integration</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> maheshinho10@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Chennai, Tamil Nadu, India</p>
+                    <p><i class="fas fa-clock"></i> Available for opportunities</p>
+                    <p><i class="fas fa-download"></i> <a href="./assets/documents/Mahesh 2025.pdf" download>Download Resume</a></p>
+                </div>
+                <div class="footer-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Hire Me</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer section ends -->
+
+<!-- scroll top btn -->
+<a href="#home" aria-label="ScrollTop" class="scroll-top" id="scroll-top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- typed.js cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+
+<!-- particle.js links -->
+<script src="./assets/js/particles.min.js"></script>
+<script src="./assets/js/app.js"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- emailjs -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
