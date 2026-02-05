@@ -287,6 +287,20 @@
                         <!-- Main Circular Background (The "Hole") -->
                         <div
                             class="absolute bottom-8 w-[350px] h-[350px] rounded-full bg-gradient-to-b from-slate-800 to-slate-900 border border-cyber-cyan/20 shadow-[0_0_50px_rgba(6,182,212,0.15)] z-0">
+
+                            <!-- Scanner Layer (Clipped to Circle) -->
+                            <div class="absolute inset-0 rounded-full overflow-hidden pointer-events-none">
+                                <!-- Single Precision Scanning Line -->
+                                <div class="absolute w-full animate-scan z-0">
+                                    <div
+                                        class="w-full h-[1px] bg-gradient-to-r from-transparent via-cyber-cyan to-transparent shadow-[0_0_15px_rgba(34,211,238,0.8)]">
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 w-full h-20 bg-gradient-to-t from-cyber-cyan/10 to-transparent">
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Animated Rings -->
                             <div
                                 class="absolute inset-0 rounded-full border border-cyber-cyan/20 border-dashed animate-spin-slow">
@@ -305,11 +319,6 @@
                                 class="relative rounded-b-full rounded-t-[180px] overflow-hidden border-b-2 border-cyber-cyan/30 shadow-2xl">
                                 <img src="./assets/images/Mahesh hero.png" alt="Mahesh Dharma Profile"
                                     class="w-full h-auto object-cover scale-110 group-hover:scale-115 transition-transform duration-700 ease-out">
-                            </div>
-
-                            <!-- Futuristic Scanner Line -->
-                            <div
-                                class="absolute top-1/4 w-full h-[1px] bg-cyber-neon shadow-[0_0_20px_cyan] animate-scan opacity-40 rounded-full">
                             </div>
                         </div>
 
