@@ -284,41 +284,27 @@
                 <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative">
                     <div class="relative w-[400px] h-[500px] flex items-end justify-center">
 
-                        <!-- Main Circular Background (The "Hole") -->
-                        <div
-                            class="absolute bottom-8 w-[350px] h-[350px] rounded-full bg-gradient-to-b from-slate-800 to-slate-900 border border-cyber-cyan/20 shadow-[0_0_50px_rgba(6,182,212,0.15)] z-0">
-
-                            <!-- Scanner Layer (Clipped to Circle) -->
-                            <div class="absolute inset-0 rounded-full overflow-hidden pointer-events-none">
-                                <!-- Single Precision Scanning Line -->
-                                <div class="absolute w-full animate-scan z-0">
-                                    <div
-                                        class="w-full h-[1px] bg-gradient-to-r from-transparent via-cyber-cyan to-transparent shadow-[0_0_15px_rgba(34,211,238,0.8)]">
-                                    </div>
-                                    <div
-                                        class="absolute bottom-0 w-full h-20 bg-gradient-to-t from-cyber-cyan/10 to-transparent">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Animated Rings -->
-                            <div
-                                class="absolute inset-0 rounded-full border border-cyber-cyan/20 border-dashed animate-spin-slow">
-                            </div>
-                            <div
-                                class="absolute inset-4 rounded-full border border-cyber-violet/20 border-dotted animate-reverse-spin">
-                            </div>
-                            <div
-                                class="absolute inset-[-10px] rounded-full bg-cyber-cyan/5 blur-2xl animate-pulse-glow">
-                            </div>
-                        </div>
-
-                        <!-- Profile Image (Pill Shape to mimic "Pop Out" with solid background) -->
+                        <!-- Profile Image Container -->
                         <div class="relative z-10 w-[300px] md:w-[340px] mb-8 group">
-                            <div
-                                class="relative rounded-b-full rounded-t-[180px] overflow-hidden border-b-2 border-cyber-cyan/30 shadow-2xl">
+                            <!-- Clipping Wrapper: This defines the shape and limits everything inside -->
+                            <div class="relative rounded-b-full rounded-t-[180px] overflow-hidden border-b-2 border-cyber-cyan/30 shadow-2xl isolate"
+                                style="mask-image: -webkit-radial-gradient(white, black); -webkit-mask-image: -webkit-radial-gradient(white, black);">
+                                <!-- Profile Image -->
                                 <img src="./assets/images/Mahesh hero.png" alt="Mahesh Dharma Profile"
                                     class="w-full h-auto object-cover scale-110 group-hover:scale-115 transition-transform duration-700 ease-out">
+
+                                <!-- Scanner Layer (Strictly Bound) -->
+                                <div class="absolute inset-0 pointer-events-none z-20">
+                                    <!-- Single Precision Scanning Line -->
+                                    <div class="absolute w-full animate-scan" style="will-change: transform;">
+                                        <div
+                                            class="w-full h-[1px] bg-gradient-to-r from-transparent via-cyber-cyan to-transparent shadow-[0_0_20px_rgba(34,211,238,0.9)]">
+                                        </div>
+                                        <div
+                                            class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-cyber-cyan/15 to-transparent">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
